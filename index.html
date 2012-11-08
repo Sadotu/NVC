@@ -8,10 +8,14 @@
 			/*#tabjes{background:white; border-top-right-radius:8px; border-top-left-radius:8px;}*/
 			.nav-tabs a{background:white;}
             .nav-tabs li a{border:solid 1px #C0C0C0;}
-			.nav-tabs li.active a{box-shadow: 0px 0px 25px #888888; border:solid 1px black; border-bottom:solid 1px white;z-index:1;position:relative;}
+			.nav-tabs li.active a{box-shadow: 0px 0px 25px #888888; z-index:1;position:relative; border:none; border-bottom:solid 1px white;}
 			.nav-tabs{margin-left:-1px;}
-			#content{background:white; margin-top:-20px; border-top-right-radius:8px;padding:8px; border-left:solid 1px black;
-				box-shadow: 0px 0px 25px #888888; z-index:0;}
+			#content{background:white; margin-top:-21px; border-top-right-radius:8px;padding:8px;box-shadow: 0px 0px 25px #888888; z-index:0;}
+			#anti-shade{background:white;margin:-8px; height:25px; z-index:2; position:relative;margin-right:0px;}
+			#menu-left{margin-top:-21px; background:white; box-shadow: 0px 0px 25px #888888; padding:8px;padding-top:10px;}
+			.nav-list{list-style-type:disc;}
+			.input-append button.add-on {height: inherit !important;}
+			#fit{border-top-right-radius:0px;border-bottom-right-radius:0px;}
 		</style>
     </head>
     <body>
@@ -46,10 +50,38 @@
 				</div>
 			</div>
 			<div class="row-fluid">
-				<div class="span2 well">
-					poep
+				<div class="span2 well" id="menu-left">
+					<div class="row-fluid">
+						<div class="span12">
+							<ul class="nav nav-list">
+							<li class="nav-header">Search</li>
+							</ul>
+							<div class="input-append">
+								<input type="text" class="search-query span10" id="fit">
+								<button class="btn add-on">
+		    						<i class="icon-search"></i>
+	   							</button>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row-fluid">
+						<div class="span12">
+								<ul class="nav nav-list">
+									<li class="nav-header">Menu header</li>
+									<li><a href="#">Main page</a></li>
+									<li><a href="#">Wiki library</a></li>
+									<li><a href="#">Getting involved</a></li>
+									<li><a href="#">Wiki news</a></li>
+									<li><a href="#">Recent changes</a></li>
+									<li><a href="#">Random page</a></li>
+									<li><a href="#">Help</a></li>
+								</ul>
+						</div>
+					</div>
 				</div>
 				<div class="span10" id="content">
+					<div id="anti-shade"></div>
 					<h3>Lorem Ipsum <small>(lorem)</small></h3>
 					em ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus feugiat scelerisque. Pellentesque sed risus eget lorem sodales mattis et a nisl. Quisque bibendum dignissim tristique. Ut placerat, arcu sed scelerisque hendrerit, nisl quam cursus tortor, ut fringilla mi ligula vitae odio. Proin congue elit interdum lacus dictum tristique. Nulla sit amet ipsum id urna mattis sodales quis nec magna. Sed at lectus ipsum, et aliquam risus. Cras at consequat mi. Donec egestas ligula ac nibh luctus facilisis. Curabitur neque neque, malesuada id viverra ac, consectetur eget purus. Donec enim est, laoreet a suscipit id, placerat quis sem. Ut at lectus sit amet dui fermentum blandit ac ac enim.
 
